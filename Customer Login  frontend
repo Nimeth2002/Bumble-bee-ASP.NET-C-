@@ -1,0 +1,84 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Frontend.Login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+      /* Header Styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Navigation Bar Styles */
+      nav {
+        background-color: #555;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Login and Register Button Styles */
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Login Page</h1>
+    </header>
+    <nav>
+      <a href="Login.aspx">Login</a>
+      <a href="Registration.aspx">Register</a>
+    </nav>
+    <div class="container">
+      <h2>Login Form</h2>
+      <form id="form1" runat="server">
+        <label for="username">Username:</label>
+          <asp:TextBox ID="txtusername" runat="server"></asp:TextBox>
+          <br />
+          <br />
+        <label for="password">Password:</label>
+          <asp:TextBox ID="txtpassword" runat="server"></asp:TextBox>
+         <br><br>
+          <asp:Button ID="btnLogin" runat="server" Text="Login" Height="35px" OnClick="btnLogin_Click" Width="67px" />
+      </form>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Bumble Bee : Buy First Pay Later</p>
+    </footer>
+  </body>
+</html>
+
