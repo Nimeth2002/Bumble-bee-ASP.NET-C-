@@ -1,0 +1,94 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Frontend.Registration" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+      /* Header Styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Navigation Bar Styles */
+      nav {
+        background-color: #555;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Login and Register Button Styles */
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Page</h1>
+    </header>
+    <nav>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </nav>
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form id="form1" runat="server">
+        <label for="fullname">Fullname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+&nbsp;<asp:TextBox ID="txtFullname" runat="server"></asp:TextBox>
+          <br />
+          <br />
+        <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+&nbsp;<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+         <br><br>
+        <label for="Address">Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:TextBox ID="txtaddress" runat="server"></asp:TextBox>
+          <br /> 
+          <br /> 
+          <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:TextBox ID="txtpassword" runat="server"></asp:TextBox>
+          <br />
+          <br />
+           <label for="Address">Confirm Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+          &nbsp;<asp:TextBox ID="txtconfirmpassword" runat="server"></asp:TextBox>
+          <br /> 
+          <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+      </form>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Bumble Bee : Buy First Pay Later</p>
+    </footer>
+  </body>
+</html>
